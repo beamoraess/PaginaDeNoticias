@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    background: #F6F6F6
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navigation {
+    background-color: #21899a;
+    top: 0;
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    color: white;
+}
+
+.destaques {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.quad-destaques {
+    background: white;
+    height: 450px;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 20px;
+    
+}
+
+.quad-destaques__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.quad-destaques__text h1 {
+    font-weight: bolder;
+    color: #D20808;
+    font-size: 30px;
+}
+
+.quad-destaques__text span {
+    position: absolute;
+    top: 0;
+}
+
+.quad-destaques__text a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.ret-destaques {
+    display: flex;
+    flex-direction: column;
+}
+
+.ret-destaques1, .ret-destaques2 {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.img-ret, .img-ret2 {
+    height: 200px;
+    width: 100%;
+}
+
+.ret-destaques1 h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ret-destaques1 span {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.ret-destaques2 h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ret-destaques2 span {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.divisao {
+    color: #000000;
+    max-width: 55.25rem;
+    border-width: 1px;
+    border-color: rgba(3, 0, 0, 0.27);
+}
+
+.ultimas-noticias__topo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ultimas-noticias__topo h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: grey;
+}
+
+.ultimas-noticias__topo ul {
+    display: flex;
+    align-items: center;
+}
+
+.ultimas-noticias__topo li {
+    padding-right: 20px;
+}
+
+.card-ultnoticias {
+    background: white;
+    width: 900px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card-ultnoticias__img {
+    width: 300px;
+}
+
+.card-ultnoticias__body {
+    padding: 10px;
+}
+
+.card-ultnoticias__body h2 {
+    position: absolute;
+    top: 0;
+}
+
+.card-ultnoticias__button {
+    background: #21899A;
+    border: none;
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-none {
+    display: none;
+}
+
+.card-ultnoticias__body span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mais-noticias {
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .destaques{
+        width: 100%;
+    }
+    .card-ultnoticias{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .destaques{
+        width: 100%;
+    }
+
+    .card-ultnoticias{
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .navigation{
+        width: 110vw;
+    }
+
+    .destaques {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .quad-destaques {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ret-destaques1 h3 {
+        padding: 2vh;
+    }
+
+    .ret-destaques2 h3 {
+        padding: 2vh;
+    }
+
+    .divisao{
+        max-width: 1em;
+    }
+
+    .ultimas-noticias__topo{
+        flex-direction: column;
+    }
+
+    .card-ultnoticias{
+        width: 100%;
+    }
+
+    .card-ultnoticias img{
+        width: 180px;
+    }
+}
